@@ -1,11 +1,11 @@
-FROM python:3.7
+FROM python
 
 # Copy files required for the app to run
 COPY . /app
 
 WORKDIR /app
 
-RUN pip freeze > requirements.txt
+#RUN pip freeze > requirements.txt
 
 
 # Install python and pip
